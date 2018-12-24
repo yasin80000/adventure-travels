@@ -1,0 +1,22 @@
+{
+  "name": "adventure-travels",
+  "version": "1.0.0",
+  "description": "memorable and adventurous services around the globe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasin80000/adventure-travels.git"
+  },
+  "author": "Abdmalique Hadge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yasin80000/adventure-travels/issues"
+  },
+  "homepage": "https://github.com/yasin80000/adventure-travels#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
