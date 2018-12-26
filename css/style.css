@@ -61,8 +61,8 @@ body {
   border-radius: 10rem;
   letter-spacing: .7rem;
   margin-top: 4rem;
-  animation-fill-mode: backwards;
-  animation: slideBottom 2s ease 1s; }
+  animation: slideBottom 2s ease .7s;
+  -webkit-animation-fill-mode: backwards; }
 
 @keyframes slideRight {
   0% {
