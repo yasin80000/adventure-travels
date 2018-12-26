@@ -1,7 +1,7 @@
 .header {
     position: relative;
     height: 90vh;
-    background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary), url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.8), rgba($color-primary, .8)), url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
 
@@ -16,7 +16,7 @@
     }
 
     &__heading {
-
+        text-align: center;
         position: absolute;
         top: 40%;
         left: 50%;
