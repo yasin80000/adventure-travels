@@ -1,9 +1,19 @@
-@import "variables";
-@import "utilities";
-@import "mixins";
-@import "grid";
-@import "base";
-@import "header";
-@import "buttons";
-@import "animations";
-@import "main-content/section-about.scss";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";
+
