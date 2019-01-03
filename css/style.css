@@ -246,15 +246,15 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
     border-radius: 3px; }
     .card__side--front {
-      border-right-color: orangered; }
+      border-right-color: #fff; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -266,9 +266,14 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
   .card__heading {
     font-size: 2.8rem;
     text-transform: uppercase;
+    color: #fff;
     text-align: right;
     font-weight: 300;
     position: absolute;
@@ -280,11 +285,15 @@ body {
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
   .card__details {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    font-weight: 300; }
+    font-weight: 400; }
     .card__details-list {
       list-style: none;
       margin-top: 2rem;
@@ -294,6 +303,17 @@ body {
         .card__details-list--item:not(:last-child) {
           border-bottom: 0.3px solid #ffb900;
           width: 100%; }
+  .card__cta {
+    text-align: center;
+    color: #fff;
+    padding: 10rem 0; }
+  .card__price-only {
+    font-size: 1.5rem; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 200;
+    display: inline-block;
+    margin-bottom: 8rem; }
 
 .row {
   max-width: 114rem;
