@@ -46,4 +46,54 @@
         transform: translateY(-4rem);
 
     }
+    &__radio-group {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        @include clearfix;
+        margin-bottom: 4rem;
+    }
+
+    &__radio-input {
+        display: none;
+    }
+    &__radio-label {
+        font-size: 1.5rem;
+        color: $color-primary;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        padding-left: 4rem;
+        text-transform: capitalize;
+    }
+
+    &__radio-button {
+        width: 3rem;
+        height: 3rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: -.6rem;
+        left: 0;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 16%;
+            left: 18%;
+            background-color: $color-primary;
+            transform: translate(-50% -50%);
+            opacity: 0;
+            transition: all .3s;
+        }
+    }
+    &__radio-input:checked + &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+
 }
