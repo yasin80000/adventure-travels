@@ -19,12 +19,19 @@
         transform: skewY(7deg);
     }
 
+    @include media(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-tours {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
+
+    @include media(tab-port){
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .section-stories {
@@ -44,11 +51,29 @@
 
                                                     url(../img/nat-10.jpg);
     background-size: cover;
-    height: 50rem;
+
+    @include media(tab-land) {
+        background-image: linear-gradient(105deg, rgba($color-white, 0.8) 0%, 
+                                                    rgba($color-white, 0.8) 70%,
+                                                    transparent 70%), 
+                                                    url(../img/nat-10.jpg);
+    }
+
+    @include media(tab-port) {
+       background-image: linear-gradient(to right, rgba($color-white, .8) 0%, rgba($color-white, .8) 100%), url(../img/nat-10.jpg);
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include media(tab-land) {
+            width: 70%;
+        }
+
+        @include media(tab-port) {
+            width: 100%;
+        }
     }
 }
 

@@ -27,8 +27,19 @@
         border-radius: 50%;
         top: 6rem;
         right: 6rem;
-        z-index: 3;
+        z-index: 11;
         background-color: $color-white;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+
+        @include media(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include media(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
 
@@ -42,7 +53,16 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1;
         transition: all .8s;
-        // transform: scale(80);
+        
+        @include media(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include media(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
